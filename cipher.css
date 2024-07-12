@@ -1,0 +1,10 @@
+body {
+    background: linear-gradient(rgb(37, 9, 52), rgb(0, 0, 0));
+    background-image: url(pxfuel.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}

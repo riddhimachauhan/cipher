@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Ciphers</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1><b><u>Welcome to Ciphers</u></b></h1>
+        <h3> <i>by Tanisha & Riddhima</i><h3>
+    </header>
+    <main>
+        <section>
+            <h2><u>What are Ciphers?</u></h2>
+            <p>A cipher is a method of transforming text to secure its contents. It encrypts plain text into coded text so that only those with the correct key can decipher it.</p>
+        </section>
+       
+        <section>
+            <h2><b><u>Types of Ciphers</u></b></h2>
+            <h3><b><u>Monoalphabetic Cipher</u></b></h3>
+            <p>Ciphers are algorithms that convert plain text into coded text to secure information. They transform readable data into an unreadable format, requiring a key for decoding to ensure confidentiality.Each letter in the plaintext is replaced with a fixed different letter from the alphabet. This type of cipher is simple but can be easily broken with frequency analysis.</p>
+            <h3><b><u>Classic Cipher</u></b></h3>
+<p>These are traditional encryption methods, such as the Caesar cipher and the Vigenère cipher, which use basic techniques for transforming text. They are historically significant but less secure by modern standards.</p>            <h3><b><u>Transposition Cipher</u></b></h3>
+            <p>Transposition ciphers rearrange the letters of the plaintext to create the ciphertext. This can be done by writing the message in a grid and reading columns in a certain order.This method focuses on permutation rather than substitution.</p>
+            <h3><b><u>Modern Cipher</u></b></h3>
+<p>These use complex algorithms for encryption, such as AES (Advanced Encryption Standard) and RSA. They provide high levels of security and are widely used in contemporary digital communications.</p> 
+       </section>
+       
+    </main>
+    <h1><u><b>Before You Start...</b></u></h1>
+    <h3><i>Simplest cipher to crack is ? </i></h3>
+    <ul id="options">
+      <li><button onclick="checkAnswer('Caesar')">Caesar Cipher</button></li>
+      <br>
+      <li><button onclick="checkAnswer('Substitution')">Substitution Cipher</button></li>
+      <br>
+      <li><button onclick="checkAnswer('Vigenère')">Vigenère Cipher</button></li>
+      <br>
+      <li><button onclick="checkAnswer('Enigma')">Enigma Cipher</button></li>
+      <br>
+    </ul>
+    <p id="result"></p>
+    <button1 onclick="getStarted()">Get Started</button>
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>
