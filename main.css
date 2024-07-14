@@ -1,101 +1,192 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #020202;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(black, rgb(0, 0, 46), rgb(111, 0, 195), rgb(144, 0, 98));
-    color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Added this line */
-    min-height: 100vh;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #020202;
+  margin: 0;
+  padding: 0;
+  
+  background-image: url('pxfuel.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  color: #f0f0f0;
+  display: flex;
+  
+  height: 100%;
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  min-height: 100vh;
 }
 
-header {
-    background-color: #040800;
-    background-image: url(main.jpg);
-    color: #f0f0f0;
-    
-    padding: 20px;
-    width: 100%; /* Added this line */
-    box-sizing: border-box; /* Added this line */
+
+nav {
+  background-color: #560678;
+  width: 100%;
 }
 
-main {
-    padding: 20px;
-    width: 100%; 
-    max-width: 800px; 
-    box-sizing: border-box; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
 }
 
 section {
-    margin: 20px 0;
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  padding: 20px;
 }
 
-button1{
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #f9dc01;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-
+header {
+  font-size: larger;
+  color: #f0f0f0;
+  padding: 20px;
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
-button1 :hover {
-    background-color: #555;
+main {
+  padding: 20px;
+  width: 100%; 
+  max-width: 800px; 
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin: 20px 0;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.button1 {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f9dc01;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+}
+
+.button1:hover {
+  background-color: #555;
 }
 
 ul {
-    list-style-type: none; 
-    padding: 0;
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; /
-  }
-  li {
-    margin-bottom: 10px;
-    width: 50%; 
-    box-sizing: border-box; 
-    padding: 0 10px; 
-  }
-  button {
-    width: 100%;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  button:hover {
-    background-color: #45a049;
-  }
-  #result {
-    font-size: 18px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    width: 100%; 
-    max-width: 800px; 
-    box-sizing: border-box; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  list-style-type: none; 
+  padding: 0;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
 }
-  
+
+li {
+  margin-bottom: 10px;
+  width: 50%; 
+  box-sizing: border-box; 
+  padding: 0 10px; 
+}
+
+button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  font-size: 18px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%; 
+  max-width: 800px; 
+  box-sizing: border-box; 
+}
+
+#what-are-ciphers h2, #what-are-ciphers p, #what-are-ciphers ol {
+  text-align: center;
+}
+
+#types-of-ciphers {
+  height: auto;
+}
+
+#uses-of-cipher {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#uses-of-cipher li {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#advantages-disadvantages {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#advantages-disadvantages > div {
+  flex: 1;
+  padding: 20px;
+}
+
+#advantages-disadvantages .advantages {
+  flex: 1;
+  padding: 20px;
+}
+
+#advantages-disadvantages .disadvantages {
+  flex: 1;
+  padding: 20px;
+}
+
